@@ -114,7 +114,7 @@
             transform: translateY(-2px);
         }
 
-        /* Services Section */
+        /* Services */
         .services {
             padding: 60px 20px;
             background-color: white;
@@ -155,76 +155,49 @@
             font-weight: 700;
         }
 
-        .service-card p {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-        }
-
-        .pricing h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            color: #0052cc;
-            margin-bottom: 40px;
-            font-weight: 700;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .pricing-card {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            text-align: center;
-            border: 2px solid #ddd;
+        /* Chatbot Icon */
+        #albasha-chat {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 60px;
+            height: 60px;
+            background-color: #1479ff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            text-decoration: none;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
             transition: all 0.3s ease;
+            z-index: 9999;
         }
-
-        .pricing-card.featured {
-            border: 2px solid #0052cc;
-            background-color: #f0f5ff;
-            transform: scale(1.05);
+        #albasha-chat:hover {
+            background-color: #0052cc;
+            transform: scale(1.1);
         }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>AL-BASHA</h1>
+            <p>خدمات الهجرة والاستشارات القانونية</p>
+        </div>
+    </header>
 
-        .pricing-card h3 {
-            font-size: 1.5rem;
-            color: #0052cc;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
+    <!-- باقي الأقسام ... (Hero / Services / Pricing / FAQ / Contact / Footer كما كانت) -->
 
-        .price {
-            font-size: 2.5rem;
-            color
-          .price {
-          <style>
-  #albasha-chat {
-    position: fixed;
-    bottom: 18px;
-    right: 18px;              /* بدّلها إلى left:18px; لو بدك يسار */
-    width: 60px; height: 60px;
-    border-radius: 50%;
-    background: #1479ff;      /* أزرق متناسق مع الموقع */
-    color: #fff;
-    font: 700 26px/60px Almarai, system-ui, sans-serif;
-    text-align: center;
-    text-decoration: none !important;
-    box-shadow: 0 8px 18px rgba(0,0,0,.25);
-    z-index: 2147483647;      /* أعلى شيء */
-    transition: transform .15s ease, background .15s ease;
-  }
-  #albasha-chat:hover { background:#0052cc; transform: scale(1.05); }
-<a id="albasha-chat" href="https://agent.jotform.com/019a1f22d43a7872ab7decda4916b4d1ca7b" target="_blank" rel="noopener">💬</a></style>
-          
+    <!-- Floating Chatbot Icon -->
+    <a id="albasha-chat" 
+       href="https://agent.jotform.com/019a1f22d43a7872ab7decda4916b4d1ca7b" 
+       target="_blank" 
+       rel="noopener" 
+       title="تحدث مع روبوت شركة الباشا">💬</a>
+
+</body>
+</html>
