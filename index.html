@@ -1,4 +1,43 @@
-<!DOCTYPE html>
+<!-- Floating Chatbot Icon - AL-BASHA -->
+<style>
+#chatbot-icon {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #1479ff;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+#chatbot-icon:hover {
+  transform: scale(1.1);
+  background-color: #0052cc;
+}
+</style>
+
+<!-- Icon -->
+<div id="chatbot-icon" title="تحدث مع روبوت شركة الباشا">💬</div>
+
+<!-- Script -->
+<script>
+document.getElementById('chatbot-icon').onclick = function() {
+  // يفتح روبوت الدردشة في نافذة منبثقة
+  window.open(
+    'https://agent.jotform.com/019a1f22d43a7872ab7decda4916b4d1ca7b',
+    'ALBASHA_CHATBOT',
+    'width=420,height=600,menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes'
+  );
+};
+</script><!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -739,4 +778,15 @@
     </script>
 </body>
 </html>
+</script>
 
+<!-- Chatbot Floating Button -->
+<a href="https://agent.jotform.com/019a1f22d43a7872ab7decda4916b4d1ca7b" 
+   target="_blank" 
+   id="chatbot-button"
+   style="position: fixed; bottom: 25px; left: 25px; background-color: #0052cc; color: white; font-size: 22px; width: 60px; height: 60px; border-radius: 50%; text-align: center; line-height: 60px; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 9999;">
+🤖
+</a>
+
+</body>
+</html>
